@@ -72,7 +72,7 @@
         _mainScrollView = [[UIScrollView alloc] init];
         _mainScrollView.frame = [UIScreen mainScreen].bounds;
         _mainScrollView.backgroundColor = [UIColor blackColor];
-        _mainScrollView.maximumZoomScale = 2.0;
+        _mainScrollView.maximumZoomScale = 3.0;
         _mainScrollView.minimumZoomScale = 1.0;
         _mainScrollView.delegate = self;
         _mainScrollView.showsVerticalScrollIndicator = NO;
@@ -109,8 +109,8 @@
 }
 
 - (void)scrollViewDidZoom:(UIScrollView *)scrollView{
-//    NSLog(@"x = %f",scrollView.center.x);
-//    NSLog(@"y = %f",scrollView.center.y);
+    NSLog(@"x = %f",scrollView.contentSize.width);
+    NSLog(@"y = %f",scrollView.contentSize.height);
     CGFloat xcenter = scrollView.center.x , ycenter = scrollView.center.y;
     //目前contentsize的width是否大于原scrollview的contentsize，如果大于，设置imageview中心x点为contentsize的一半，
 //    以固定imageview在该contentsize中心。如果不大于说明图像的宽还没有超出屏幕范围，可继续让中心x点为屏幕中点，此种情况确保图像在屏幕中心。
