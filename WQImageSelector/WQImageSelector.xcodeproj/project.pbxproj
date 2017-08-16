@@ -15,6 +15,8 @@
 		2444D1971F402A1C005586F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2444D1951F402A1C005586F5 /* LaunchScreen.storyboard */; };
 		2444D1A41F402B26005586F5 /* ZoomImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2444D1A21F402B26005586F5 /* ZoomImageViewController.m */; };
 		2444D1A91F403046005586F5 /* 123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2444D1A81F403046005586F5 /* 123.jpg */; };
+		2478058A1F448B9E0092B6CF /* LineObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 247805891F448B9E0092B6CF /* LineObj.m */; };
+		2478058D1F4492A60092B6CF /* PaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2478058C1F4492A60092B6CF /* PaintView.m */; };
 		697FA5041F41D30D00018379 /* PaintDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697FA5021F41D30D00018379 /* PaintDemoViewController.m */; };
 		697FA5051F41D30D00018379 /* PaintDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697FA5031F41D30D00018379 /* PaintDemoViewController.xib */; };
 /* End PBXBuildFile section */
@@ -35,6 +37,10 @@
 		2444D1A61F402C56005586F5 /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
 		2444D1A71F402CC0005586F5 /* WQImageSelector.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQImageSelector.pch; sourceTree = "<group>"; };
 		2444D1A81F403046005586F5 /* 123.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 123.jpg; sourceTree = "<group>"; };
+		247805881F448B9E0092B6CF /* LineObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineObj.h; sourceTree = "<group>"; };
+		247805891F448B9E0092B6CF /* LineObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineObj.m; sourceTree = "<group>"; };
+		2478058B1F4492A60092B6CF /* PaintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintView.h; sourceTree = "<group>"; };
+		2478058C1F4492A60092B6CF /* PaintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintView.m; sourceTree = "<group>"; };
 		697FA5011F41D30D00018379 /* PaintDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintDemoViewController.h; sourceTree = "<group>"; };
 		697FA5021F41D30D00018379 /* PaintDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintDemoViewController.m; sourceTree = "<group>"; };
 		697FA5031F41D30D00018379 /* PaintDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaintDemoViewController.xib; sourceTree = "<group>"; };
@@ -103,6 +109,10 @@
 				697FA5011F41D30D00018379 /* PaintDemoViewController.h */,
 				697FA5021F41D30D00018379 /* PaintDemoViewController.m */,
 				697FA5031F41D30D00018379 /* PaintDemoViewController.xib */,
+				2478058B1F4492A60092B6CF /* PaintView.h */,
+				2478058C1F4492A60092B6CF /* PaintView.m */,
+				247805881F448B9E0092B6CF /* LineObj.h */,
+				247805891F448B9E0092B6CF /* LineObj.m */,
 			);
 			path = photoEdit;
 			sourceTree = "<group>";
@@ -184,6 +194,8 @@
 				697FA5041F41D30D00018379 /* PaintDemoViewController.m in Sources */,
 				2444D18F1F402A1C005586F5 /* ViewController.m in Sources */,
 				2444D1A41F402B26005586F5 /* ZoomImageViewController.m in Sources */,
+				2478058A1F448B9E0092B6CF /* LineObj.m in Sources */,
+				2478058D1F4492A60092B6CF /* PaintView.m in Sources */,
 				2444D18C1F402A1C005586F5 /* AppDelegate.m in Sources */,
 				2444D1891F402A1C005586F5 /* main.m in Sources */,
 			);
