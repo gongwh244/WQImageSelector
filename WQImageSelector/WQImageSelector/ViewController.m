@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ZoomImageViewController.h"
+#import "PaintDemoViewController.h"
 @interface ViewController ()
 
 @end
@@ -22,6 +23,11 @@
 - (IBAction)selectImageAction:(id)sender {
     
     ZoomImageViewController *vc = [[ZoomImageViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (IBAction)paintAction:(id)sender {
+    
+    PaintDemoViewController *vc = [[PaintDemoViewController alloc] init];
     [self presentViewController:vc animated:YES completion:nil];
 }
 
