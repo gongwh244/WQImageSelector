@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -50,13 +50,29 @@
                                     <action selector="selectImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WZM-Vg-YOs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHY-D4-PuY">
+                                <rect key="frame" x="288" y="314" width="60" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="PsQ-Iz-qjG"/>
+                                    <constraint firstAttribute="height" constant="40" id="Wi4-aW-Pfu"/>
+                                </constraints>
+                                <state key="normal" title="image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="imageEditAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eiM-oG-eLi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ys7-Pa-6yv" firstAttribute="leading" secondItem="XaY-3Q-MJ4" secondAttribute="trailing" constant="5" id="2eI-fV-d2R"/>
                             <constraint firstItem="Ys7-Pa-6yv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="37l-5l-YMQ"/>
                             <constraint firstItem="XaY-3Q-MJ4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PGD-1S-2za"/>
+                            <constraint firstItem="QHY-D4-PuY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Rhd-L6-Lgz"/>
                             <constraint firstItem="XaY-3Q-MJ4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sWS-uZ-8w7"/>
+                            <constraint firstItem="QHY-D4-PuY" firstAttribute="leading" secondItem="Ys7-Pa-6yv" secondAttribute="trailing" constant="5" id="wPQ-zW-BMo"/>
                         </constraints>
                     </view>
                 </viewController>

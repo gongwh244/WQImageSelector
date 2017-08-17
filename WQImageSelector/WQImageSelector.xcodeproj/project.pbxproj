@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24222BD11F45C8CB0073AEF7 /* box.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24222BCF1F45C8CB0073AEF7 /* box.jpg */; };
+		24222BD21F45C8CB0073AEF7 /* joke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24222BD01F45C8CB0073AEF7 /* joke.jpg */; };
+		24222BD71F45D8D70073AEF7 /* ImagePaintDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24222BD51F45D8D70073AEF7 /* ImagePaintDemoViewController.m */; };
+		24222BD81F45D8D70073AEF7 /* ImagePaintDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24222BD61F45D8D70073AEF7 /* ImagePaintDemoViewController.xib */; };
+		24222BDB1F45D93C0073AEF7 /* PaintImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24222BDA1F45D93C0073AEF7 /* PaintImageView.m */; };
+		24222BDE1F45E8B20073AEF7 /* EditImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24222BDD1F45E8B20073AEF7 /* EditImageView.m */; };
+		24222BE11F45F1110073AEF7 /* CusScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24222BE01F45F1110073AEF7 /* CusScrollView.m */; };
 		2444D1891F402A1C005586F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2444D1881F402A1C005586F5 /* main.m */; };
 		2444D18C1F402A1C005586F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2444D18B1F402A1C005586F5 /* AppDelegate.m */; };
 		2444D18F1F402A1C005586F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2444D18E1F402A1C005586F5 /* ViewController.m */; };
@@ -22,6 +29,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24222BCF1F45C8CB0073AEF7 /* box.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = box.jpg; sourceTree = "<group>"; };
+		24222BD01F45C8CB0073AEF7 /* joke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = joke.jpg; sourceTree = "<group>"; };
+		24222BD41F45D8D70073AEF7 /* ImagePaintDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePaintDemoViewController.h; sourceTree = "<group>"; };
+		24222BD51F45D8D70073AEF7 /* ImagePaintDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePaintDemoViewController.m; sourceTree = "<group>"; };
+		24222BD61F45D8D70073AEF7 /* ImagePaintDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagePaintDemoViewController.xib; sourceTree = "<group>"; };
+		24222BD91F45D93C0073AEF7 /* PaintImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintImageView.h; sourceTree = "<group>"; };
+		24222BDA1F45D93C0073AEF7 /* PaintImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintImageView.m; sourceTree = "<group>"; };
+		24222BDC1F45E8B20073AEF7 /* EditImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditImageView.h; sourceTree = "<group>"; };
+		24222BDD1F45E8B20073AEF7 /* EditImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditImageView.m; sourceTree = "<group>"; };
+		24222BDF1F45F1110073AEF7 /* CusScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CusScrollView.h; sourceTree = "<group>"; };
+		24222BE01F45F1110073AEF7 /* CusScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CusScrollView.m; sourceTree = "<group>"; };
 		2444D1841F402A1C005586F5 /* WQImageSelector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WQImageSelector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2444D1881F402A1C005586F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2444D18A1F402A1C005586F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,6 +75,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24222BD31F45CF430073AEF7 /* imageEdit */ = {
+			isa = PBXGroup;
+			children = (
+				24222BD41F45D8D70073AEF7 /* ImagePaintDemoViewController.h */,
+				24222BD51F45D8D70073AEF7 /* ImagePaintDemoViewController.m */,
+				24222BD61F45D8D70073AEF7 /* ImagePaintDemoViewController.xib */,
+				24222BD91F45D93C0073AEF7 /* PaintImageView.h */,
+				24222BDA1F45D93C0073AEF7 /* PaintImageView.m */,
+				24222BDC1F45E8B20073AEF7 /* EditImageView.h */,
+				24222BDD1F45E8B20073AEF7 /* EditImageView.m */,
+				24222BDF1F45F1110073AEF7 /* CusScrollView.h */,
+				24222BE01F45F1110073AEF7 /* CusScrollView.m */,
+			);
+			path = imageEdit;
+			sourceTree = "<group>";
+		};
 		2444D17B1F402A1C005586F5 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +125,8 @@
 		2444D1871F402A1C005586F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				24222BCF1F45C8CB0073AEF7 /* box.jpg */,
+				24222BD01F45C8CB0073AEF7 /* joke.jpg */,
 				2444D1A81F403046005586F5 /* 123.jpg */,
 				2444D1931F402A1C005586F5 /* Assets.xcassets */,
 				2444D1A61F402C56005586F5 /* GlobalDefine.h */,
@@ -104,6 +140,7 @@
 		2444D19E1F402B26005586F5 /* photoEdit */ = {
 			isa = PBXGroup;
 			children = (
+				24222BD31F45CF430073AEF7 /* imageEdit */,
 				2444D1A11F402B26005586F5 /* ZoomImageViewController.h */,
 				2444D1A21F402B26005586F5 /* ZoomImageViewController.m */,
 				697FA5011F41D30D00018379 /* PaintDemoViewController.h */,
@@ -176,9 +213,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24222BD81F45D8D70073AEF7 /* ImagePaintDemoViewController.xib in Resources */,
 				2444D1A91F403046005586F5 /* 123.jpg in Resources */,
 				2444D1971F402A1C005586F5 /* LaunchScreen.storyboard in Resources */,
 				2444D1941F402A1C005586F5 /* Assets.xcassets in Resources */,
+				24222BD21F45C8CB0073AEF7 /* joke.jpg in Resources */,
+				24222BD11F45C8CB0073AEF7 /* box.jpg in Resources */,
 				2444D1921F402A1C005586F5 /* Main.storyboard in Resources */,
 				697FA5051F41D30D00018379 /* PaintDemoViewController.xib in Resources */,
 			);
@@ -191,11 +231,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24222BDB1F45D93C0073AEF7 /* PaintImageView.m in Sources */,
 				697FA5041F41D30D00018379 /* PaintDemoViewController.m in Sources */,
+				24222BDE1F45E8B20073AEF7 /* EditImageView.m in Sources */,
 				2444D18F1F402A1C005586F5 /* ViewController.m in Sources */,
 				2444D1A41F402B26005586F5 /* ZoomImageViewController.m in Sources */,
 				2478058A1F448B9E0092B6CF /* LineObj.m in Sources */,
+				24222BD71F45D8D70073AEF7 /* ImagePaintDemoViewController.m in Sources */,
 				2478058D1F4492A60092B6CF /* PaintView.m in Sources */,
+				24222BE11F45F1110073AEF7 /* CusScrollView.m in Sources */,
 				2444D18C1F402A1C005586F5 /* AppDelegate.m in Sources */,
 				2444D1891F402A1C005586F5 /* main.m in Sources */,
 			);

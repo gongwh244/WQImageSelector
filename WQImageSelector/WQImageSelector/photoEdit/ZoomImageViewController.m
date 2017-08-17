@@ -90,15 +90,16 @@
 - (UIImageView *)zoomImageView{
     if (!_zoomImageView) {
         _zoomImageView = [[UIImageView alloc] initWithImage:self.image];
-        _zoomImageView.contentMode = UIViewContentModeScaleAspectFit;
-        _zoomImageView.frame = CGRectMake(0, 0, Screen_width, Screen_width*(self.image.size.height/self.image.size.width));
+        _zoomImageView.contentMode = UIViewContentModeScaleToFill;
+//        _zoomImageView.frame = CGRectMake(0, 0, Screen_width, Screen_width*(self.image.size.height/self.image.size.width));
+        _zoomImageView.frame = CGRectMake(0, 0, Screen_width, self.image.size.height>Screen_height ? self.image.size.height : Screen_height);
     }
     return _zoomImageView;
 }
 
 - (UIImage *)image{
     if (!_image) {
-        _image = [UIImage imageNamed:@"123.jpg"];
+        _image = [UIImage imageNamed:@"joke.jpg"];
     }
     return _image;
 }

@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "ZoomImageViewController.h"
 #import "PaintDemoViewController.h"
+#import "ImagePaintDemoViewController.h"
+
+
 @interface ViewController ()
 
 @end
@@ -28,6 +31,10 @@
 - (IBAction)paintAction:(id)sender {
     
     PaintDemoViewController *vc = [[PaintDemoViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (IBAction)imageEditAction:(id)sender {
+    ImagePaintDemoViewController *vc = [[ImagePaintDemoViewController alloc] init];
     [self presentViewController:vc animated:YES completion:nil];
 }
 
