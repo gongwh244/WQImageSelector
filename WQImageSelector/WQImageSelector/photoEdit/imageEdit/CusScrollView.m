@@ -19,7 +19,10 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
+    for (UITouch *touch in touches) {
+        CGPoint p = [touch locationInView:self];
+        NSLog(@"x = %f,y = %f",p.x,p.y);
+    }
 }
 
 @end

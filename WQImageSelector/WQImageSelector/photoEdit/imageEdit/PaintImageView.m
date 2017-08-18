@@ -61,20 +61,12 @@
         
         _mainScrollView.canCancelContentTouches = YES;
         _mainScrollView.delaysContentTouches = NO;
-//        _mainScrollView.scrollEnabled = NO;
-//        _mainScrollView.userInteractionEnabled = NO;
-//        [_mainScrollView becomeFirstResponder];
-        
         
         _mainScrollView.showsVerticalScrollIndicator = NO;
         _mainScrollView.showsHorizontalScrollIndicator = NO;
         _mainScrollView.contentSize = self.imageView.bounds.size;
         [_mainScrollView addSubview:self.imageView];
         self.imageView.center = self.mainScrollView.center;
-        
-        UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleAction:)];
-        doubleTap.numberOfTapsRequired = 2;
-        [_mainScrollView addGestureRecognizer:doubleTap];
     }
     return _mainScrollView;
 }
@@ -100,8 +92,7 @@
 }
 
 - (void)scrollViewDidZoom:(UIScrollView *)scrollView{
-//    NSLog(@"x = %f",scrollView.contentSize.width);
-//    NSLog(@"y = %f",scrollView.contentSize.height);
+    
     CGFloat xcenter = scrollView.center.x , ycenter = scrollView.center.y;
     //目前contentsize的width是否大于原scrollview的contentsize，如果大于，设置imageview中心x点为contentsize的一半，
     //    以固定imageview在该contentsize中心。如果不大于说明图像的宽还没有超出屏幕范围，可继续让中心x点为屏幕中点，此种情况确保图像在屏幕中心。

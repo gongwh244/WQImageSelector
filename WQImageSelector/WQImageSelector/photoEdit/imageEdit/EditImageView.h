@@ -9,13 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "LineObj.h"
 
+typedef void(^resultBlock)(BOOL isSuc);
+
 @interface EditImageView : UIImageView
 
 @property (nonatomic,strong) NSMutableArray *lineArr;
 @property (nonatomic,assign) CGPoint tmpP;
 
-- (void)cleanPaintView;
 
-- (void)saveImage;
+- (void)saveImageResultHandle:(resultBlock)result;
 
+@property (nonatomic,copy) resultBlock myBlock;
 @end

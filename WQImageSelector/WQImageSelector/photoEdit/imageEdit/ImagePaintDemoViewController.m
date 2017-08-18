@@ -22,11 +22,23 @@
     
     self.paintImageVIew = [[PaintImageView alloc] initWithFrame:CGRectMake(0, 51, Screen_width, Screen_height - 51)];
     [self.view addSubview:self.paintImageVIew];
-    
 }
 
 - (void)saveImageToPhone{
-    [self.paintImageVIew.imageView saveImage];
+    
+    [self.paintImageVIew.imageView saveImageResultHandle:^(BOOL isSuc) {
+        if (isSuc) {
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"message" message:@"保存图片成功" preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *ac = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
+            [alert addAction:ac];
+            [self presentViewController:alert animated:YES completion:nil];
+        }else{
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"message" message:@"保存图片失败" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *ac = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
+            [alert addAction:ac];
+            [self presentViewController:alert animated:YES completion:nil];
+        }
+    }];
 }
 
 

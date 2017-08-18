@@ -40,18 +40,6 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)doubleAction:(UITapGestureRecognizer *)tap{
-    CGFloat scale = self.mainScrollView.zoomScale;
-    if (scale == 1.0f) {
-        scale = 2.0f;
-    }else if(scale == 2.0f){
-        scale = 1.0f;
-    }else{
-        scale = 2.0f;
-    }
-    [self.mainScrollView setZoomScale:scale animated:YES];
-}
-
 #pragma mark - Setter & getter
 - (UIView *)headView{
     if (!_headView) {
